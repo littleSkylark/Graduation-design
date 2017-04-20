@@ -1,0 +1,932 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessCol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessCol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessDim -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessDim">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessRule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessTal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessTal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#HAS_COLUMN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#HAS_COLUMN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#HasRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#HasRule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Equi_C_Rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Equi_C_Rule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_ExistRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_ExistRule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logic_C_Rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logic_C_Rule">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logicdepend_Rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logicdepend_Rule">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Rule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Is_Rule_Of"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#InstituteRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#InstituteRule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Exist_Rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Exist_Rule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Logicdepend_Rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Logicdepend_Rule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#LogicdependRule"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Is_Rule_Of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Is_Rule_Of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasAssessGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasAssessGoal">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessGoal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasCompetence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasCompetence">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Competence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConEuiq -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConEuiq">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConLessthan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConLessthan">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConMorethan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConMorethan">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasContinuity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasContinuity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasEqui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasEqui">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasExist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasExist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasGoalTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasGoalTask">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasLessthan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasLessthan">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMorethan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMaxvalue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMaxvalue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MAX_VALUE"/>
+                <owl:allValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMinvalue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMinvalue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE"/>
+                <owl:allValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMorethan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMorethan">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasPrecondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasPrecondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Precondition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasRestriction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasRestriction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasSolveMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasSolveMethod">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasSubTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasSubTask">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#isNotnull -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#isNotnull">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_ID"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_NAME -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_NAME">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#CREATE_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#CREATE_DATE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#CREATOR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#CREATOR">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATA_TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATA_TYPE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DESCRIPTION">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ENGLISH_CODE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ENGLISH_CODE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MAX_VALUE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MAX_VALUE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#NOTNULL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#NOTNULL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_ID"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_NAME -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_NAME">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessGoal">
+        <rdfs:comment>It&apos;s the  assessgoal of the task
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Competence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Competence">
+        <rdfs:comment>It&apos;s the competence of the Method
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ContinuityRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ContinuityRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATABASEINFO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATABASEINFO"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATABASEINFO"/>
+        <rdfs:comment>表信息</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATABASEINFO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Equi_C_Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Equi_C_Rule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#EuiqdependRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#EuiqdependRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Is_Rule_Of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Integrity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Integrity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Logic_C_Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Logic_C_Rule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#LogicdependRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#LogicdependRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method">
+        <rdfs:comment>It’s used to resolve the task</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_Null -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_Null">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Parameter">
+        <rdfs:comment>It&apos;s the parameter of the method
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Precondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Precondition">
+        <rdfs:comment>It&apos;s the precondition of the task or method
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Reduncy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Reduncy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction">
+        <rdfs:comment>It‘s the restriction of the  task or method
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task">
+        <rdfs:comment>It&apos;s the abstract description of  problem</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate"/>
+        <Has_Rule rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Logicdepend"/>
+        <Has_Rule rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_null"/>
+        <Has_Rule rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <HAS_COLUMN rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_JH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_JH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_JH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01"/>
+        <isNotnull rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#true"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_SYDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_SYDS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_YLSYDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_YLSYDS">
+        <hasMinvalue rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#true"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <HAS_COLUMN rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02_JH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02_JH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02_JH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <hasExist rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_JH"/>
+        <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <HAS_COLUMN rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_SYDS"/>
+        <HAS_COLUMN rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_YLSYDS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_SYDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_SYDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_YLSYDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_YLSYDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05"/>
+        <hasMorethan rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA05_SYDS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule"/>
+        <Is_Rule_Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Existence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Existence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Logicdepend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Logicdepend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#LogicdependRule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MDCZZBX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MDCZZBX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <NOTNULL rdf:datatype="&xsd;boolean">true</NOTNULL>
+        <rdfs:comment>目的层纵坐标</rdfs:comment>
+        <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_null -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_null">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_Null"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#XIAOLV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#XIAOLV">
+        <AssessTal rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#XiaoMing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#XiaoMing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
+        <AssessCol rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02_JH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#minvalue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#minvalue">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE"/>
+                <owl:allValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#true -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#true"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#xiaohong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#xiaohong">
+        <AssessDim rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

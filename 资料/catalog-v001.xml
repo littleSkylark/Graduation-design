@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1490581916978" name="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78" uri="DQ.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1490581916978" name="http://www.semanticweb.org/skylark/ontologies/2017/0/untitled-ontology-4" uri="Animal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1490581916978" name="shadowed:http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78" uri="小芳本体/THEFINALLY(1).owl"/>
+    </group>
+</catalog>

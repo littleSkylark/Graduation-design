@@ -1,7 +1,7 @@
 package com.lark.ontology.controller;
 
 import com.lark.ontology.dao.pojo.Ontology;
-import com.lark.ontology.service.StartupTest;
+import com.lark.ontology.service.InitService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
