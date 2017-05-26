@@ -1,6 +1,8 @@
 package com.lark.ontology.service;
 
+import com.lark.ontology.dao.pojo.Ontology;
 import org.apache.jena.ontology.OntClass;
+import org.apache.jena.ontology.OntDocumentManager;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -16,41 +18,28 @@ import java.util.Iterator;
 @Service
 public class InitService {
 
-    private static String ont;
+    private static Ontology ont;
 
     @PostConstruct
-    private static void readOntModel() {
-        OntModel ontModel = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM);
-        ontModel.read("DQ.owl");
+    public static void readOntModel() {
+        String SOURCE = "http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78";
+        String NS = SOURCE + "#";
+        OntModel ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
+        //ontModel.read("DQ.owl");
+        OntDocumentManager dm = ontModel.getDocumentManager();
+        dm.addAltEntry(SOURCE, "classpath:DQ.owl");
+        ontModel.read(SOURCE, "RDF/XML");
 
-        String str;
-        for (Iterator allClass = ontModel.listClasses(); allClass.hasNext();) {
+        System.out.println(ontModel.getOntClass(NS + "Task"));
 
-            OntClass ontClass = (OntClass) allClass.next();
-            if(!ontClass.isAnon()){
-                String classStr = ontClass.toString();
-                System.out.print("类URI：" + classStr + "   ");
-                str = classStr.substring(classStr.indexOf("#") + 1);
-                System.out.print("类名：" + str + "   ");
-                
-                if (!ontClass.listSuperClasses().hasNext()) {
-                    System.out.println("类描述类型：无");
-                } else {
-                    for (Iterator supClasses = ontClass.listSuperClasses(); supClasses.hasNext();) {
-                        OntClass supClass = (OntClass) supClasses.next();
-                        String supClassStr = supClass.toString();
-                        str = supClassStr.substring(supClassStr.indexOf("#") + 1);
-                        System.out.print("类描述类型：subClassOf   ");
-                        System.out.println("类描述值：" + str);
-
-
-                    }
-                }
-            }
+        //列出model中所包含的所有的类
+        for (Iterator<OntClass> i = ontModel.listClasses(); i.hasNext(); ) {
+            OntClass c = i.next();
+            System.out.println("ontClass:" + c.getLocalName());
         }
     }
 
-    public static String get(){
+    public static Ontology get() {
         return ont;
     }
 }
