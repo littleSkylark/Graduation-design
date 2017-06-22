@@ -24,12 +24,12 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JCheckBoxMenuItem;
 
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.FormSpecs;
-import com.jgoodies.forms.layout.RowSpec;
-
-import net.miginfocom.swing.MigLayout;
+//import com.jgoodies.forms.layout.FormLayout;
+//import com.jgoodies.forms.layout.ColumnSpec;
+//import com.jgoodies.forms.layout.FormSpecs;
+//import com.jgoodies.forms.layout.RowSpec;
+//
+//import net.miginfocom.swing.MigLayout;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -72,7 +72,7 @@ public class AccessDataFrame extends JFrame {
     //构建本体模型
     public OntModel getontModel() {
         OntModel myOntModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
-        myOntModel.read("F:\\yy语音\\protege\\THEFINALLY.owl");
+        myOntModel.read("DQ.owl");
         OntDocumentManager ontDocumentManager = myOntModel.getDocumentManager();
         return myOntModel;
     }

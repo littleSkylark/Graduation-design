@@ -1,20 +1,11 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#"
      xml:base="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78"/>
     
 
@@ -42,9 +33,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessDim -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessDim">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Assessor"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -70,10 +61,10 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#HAS_COLUMN -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#HAS_COLUMN">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -99,9 +90,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_ExistRule -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_ExistRule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -109,8 +100,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logic_C_Rule -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logic_C_Rule">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
     </owl:ObjectProperty>
     
 
@@ -118,9 +109,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logicdepend_Rule -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Logicdepend_Rule">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
     </owl:ObjectProperty>
     
 
@@ -128,10 +119,10 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Rule -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Has_Rule">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Is_Rule_Of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -139,8 +130,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#IS_COLUMN_OF">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
     </owl:ObjectProperty>
     
 
@@ -154,9 +145,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Exist_Rule -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Exist_Rule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -164,9 +154,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Logicdepend_Rule -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Institute_Logicdepend_Rule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#LogicdependRule"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -189,8 +179,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasAssessGoal -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasAssessGoal">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessGoal"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#AssessGoal"/>
     </owl:ObjectProperty>
     
 
@@ -198,9 +188,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasCompetence -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasCompetence">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Competence"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Competence"/>
     </owl:ObjectProperty>
     
 
@@ -208,8 +198,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConEuiq -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConEuiq">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
     </owl:ObjectProperty>
     
 
@@ -217,8 +207,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConLessthan -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConLessthan">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
     </owl:ObjectProperty>
     
 
@@ -226,8 +216,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConMorethan -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasConMorethan">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
     </owl:ObjectProperty>
     
 
@@ -241,8 +231,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasEqui -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasEqui">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
     </owl:ObjectProperty>
     
 
@@ -250,9 +240,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasExist -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasExist">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -260,8 +250,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasGoalTask -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasGoalTask">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
     </owl:ObjectProperty>
     
 
@@ -269,9 +259,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasLessthan -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasLessthan">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMorethan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
     </owl:ObjectProperty>
     
 
@@ -279,12 +269,12 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMaxvalue -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMaxvalue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MAX_VALUE"/>
-                <owl:allValuesFrom rdf:resource="&xsd;float"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
@@ -298,7 +288,7 @@
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE"/>
-                <owl:allValuesFrom rdf:resource="&xsd;float"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
@@ -308,8 +298,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMorethan -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasMorethan">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
     </owl:ObjectProperty>
     
 
@@ -327,9 +317,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasPrecondition">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Precondition"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Precondition"/>
     </owl:ObjectProperty>
     
 
@@ -338,8 +328,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasRestriction">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Restriction"/>
     </owl:ObjectProperty>
     
 
@@ -347,8 +337,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasSolveMethod -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#hasSolveMethod">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Method"/>
     </owl:ObjectProperty>
     
 
@@ -385,14 +375,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_ID"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -401,7 +391,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#COLUMN_NAME">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -410,7 +400,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#CREATE_DATE">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -419,7 +409,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#CREATOR">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -428,7 +418,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATA_TYPE">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -437,7 +427,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DESCRIPTION">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -445,9 +435,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ENGLISH_CODE -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ENGLISH_CODE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -456,7 +446,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MAX_VALUE">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -465,7 +455,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -474,7 +464,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#NOTNULL">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -484,14 +474,14 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_ID"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -500,7 +490,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#TABLE_NAME">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DATATABLE"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -605,20 +595,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#EuiqdependRule">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Rule"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Is_Rule_Of"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -731,25 +707,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate"/>
-        <Has_Rule rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Logicdepend"/>
-        <Has_Rule rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_null"/>
-        <Has_Rule rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Dimension"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01">
@@ -796,8 +753,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02_JH">
         <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <hasExist rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_JH"/>
         <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02"/>
+        <hasExist rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA01_JH"/>
     </owl:NamedIndividual>
     
 
@@ -831,20 +788,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule"/>
-        <Is_Rule_Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Consistency"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Existence -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Existence">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#ExistRule"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Existence"/>
     
 
 
@@ -860,9 +806,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MDCZZBX">
         <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DataColumn"/>
-        <NOTNULL rdf:datatype="&xsd;boolean">true</NOTNULL>
-        <rdfs:comment>目的层纵坐标</rdfs:comment>
         <IS_COLUMN_OF rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#DAA02"/>
+        <NOTNULL rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</NOTNULL>
+        <rdfs:comment>目的层纵坐标</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -871,14 +817,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_null">
         <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Not_Null"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#RangRule"/>
     </owl:NamedIndividual>
     
 
@@ -906,7 +844,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#MIN_VALUE"/>
-                <owl:allValuesFrom rdf:resource="&xsd;float"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
@@ -921,12 +859,10 @@
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#xiaohong -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#xiaohong">
-        <AssessDim rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#Accurate"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2016/4/untitled-ontology-78#xiaohong"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
